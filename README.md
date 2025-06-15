@@ -19,34 +19,12 @@ Input: Real-time video feed or recorded video (processed using YOLOv8 for vehicl
 
 Control: RL agent adjusts traffic light phases based on live vehicle counts.
 
-🛠 Folder Structure
+
 graphql
 Copy
 Edit
-urban_traffic_optimizer/
-├── configs/
-│   ├── grid.net.xml         # Network file
-│   ├── grid.rou.xml         # Route file
-│   └── grid.sumocfg         # SUMO configuration
-├── models/
-│   └── trained_model.zip    # Saved RL model (after training)
-├── videos/
-│   └── traffic_input.mp4    # Traffic video for YOLO
-├── outputs/
-│   ├── yolo_output.csv      # Vehicle counts from YOLO
-│   └── simulation_logs/     # SUMO and RL logs
-├── traffic_light_rl.py      # RL traffic light controller
-├── yolo_detection.py        # YOLOv8 vehicle detection script
-├── simulate.py              # Runs SUMO with RL agent
-├── visualize.py             # Visualization of traffic and performance
-├── requirements.txt         # Required Python packages
-└── README.md                # Project documentation
-⚙ How to Run
 1️⃣ Install dependencies
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 2️⃣ Run YOLO vehicle detection
 
